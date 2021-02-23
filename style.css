@@ -1,0 +1,33 @@
+.text {
+  width: 36rem;
+  color: #4a3933;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 2rem;
+  white-space: nowrap;
+  border-right: 2px solid;
+  overflow: hidden;
+  animation: typeAnimation 5s steps(45) 1s,
+    blinkCursor 500ms steps(45) infinite normal;
+}
+
+@keyframes typeAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 36rem;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: #4a3933;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
